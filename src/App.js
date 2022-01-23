@@ -1,24 +1,64 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Review from "./Components/Review";
+import Toggle from "./Components/Toggle";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+
+
+const StyledNav = styled.ul`
+  margin: 0 auto;
+  justify-content: center;
+  height: 200px;
+  padding: 90px;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.7);
+  width: 100px;
+  li {
+    list-style: none;
+    margin-right: 2%;
+  }
+`;
+
+const StyledHeader = styled.h1`
+  text-align: center;
+`;
+
+const Home = () => (
+  <nav>
+    <StyledHeader> Welcome to Interaction Design!</StyledHeader>
+    <StyledNav>
+      <li>
+        <Link to="/review"> Review</Link>
+      </li>
+
+      <li>
+        <Link to="/toggle"> Toggle</Link>
+      </li>
+
+
+    </StyledNav>
+  </nav>
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          It's the new application. Another change
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/review">
+          <Review />
+        </Route>
+        <Route path="/toggle">
+          <Toggle />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
