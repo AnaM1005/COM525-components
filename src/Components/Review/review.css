@@ -1,0 +1,101 @@
+.boxed{
+    /*display: flex;
+    justify-content: center;
+    */border: 1px solid #E5E5E5 ;
+    border-radius: 5px;
+    width: 390px;
+    height: 844px;
+    /*margin: 200px;
+    */margin-left: 35%;
+    margin-right: 15%;
+    padding: 100px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+h1{
+   display: flex;
+   text-align: center;
+   /*justify-content: center;
+   position: absolute;
+   top: 5 vh;
+   left: 50 rem;
+   width: 40%;
+   margin-top: -10vh;*/
+   margin-top: -20px;
+   color: #81B29A;
+   font-family: 'Montserrat';
+}
+
+h2{
+    display: flex;
+   text-align: center;
+   color: #9a8c98;
+   font-family: 'Montserrat';
+   font-weight: 500;
+   font-size: 20px;
+}
+
+p{
+    color: #22223B;
+   font-family: 'Montserrat';
+   font-weight: 500;
+   font-size: 22px;
+}
+.starRating
+{   display: flex;
+    /*justify-content: center;
+    align-items: center;
+    min-height: 50vh;*/
+}
+
+.star{
+
+    cursor: pointer;
+    transition: color 200ms;
+    margin-right: 9px;
+}
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.button{
+  height: 63px;
+  width: 221px;
+  justify-content: center;
+  background: #81B29A;
+  color: #ffff;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 24px;
+  border: 2px solid #81B29A;
+  border-radius:10px;
+  cursor: pointer;
+  margin-left: 4vw;
+  margin-top: 6vh;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+  display: flexbox;
+}
+
+.button:hover {
+    background: #ffffff;
+    border: 2px solid #81B29A;
+    color: #81B29A;
+  }
+/*
+orange: #FCA311;
+gray: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+*/

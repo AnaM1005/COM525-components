@@ -1,12 +1,11 @@
 import React from "react";
+import styled from "styled-components";
 import './App.css';
-import Review from "./Components/Review";
+import Review from "./Components/Review/index";
 import Toggle from "./Components/Toggle";
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import Accordion from "./Components/Accordion/index";
+
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 
 
@@ -29,7 +28,7 @@ const StyledHeader = styled.h1`
 
 const Home = () => (
   <nav>
-    <StyledHeader> Welcome to Interaction Design!</StyledHeader>
+    <StyledHeader> Welcome to Interaction Design components!</StyledHeader>
     <StyledNav>
       <li>
         <Link to="/review"> Review</Link>
@@ -37,6 +36,10 @@ const Home = () => (
 
       <li>
         <Link to="/toggle"> Toggle</Link>
+      </li>
+
+      <li>
+        <Link to="/Accordion"> Accordion</Link>
       </li>
 
 
@@ -53,6 +56,9 @@ function App() {
         </Route>
         <Route path="/toggle">
           <Toggle />
+        </Route>
+        <Route path="/Accordion">
+          <Accordion />
         </Route>
         <Route path="/">
           <Home />

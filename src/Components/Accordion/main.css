@@ -1,0 +1,16 @@
+
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    background-color: #3c3c3c;
+  }
+  
+  header h1 {
+    color: #eee;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
