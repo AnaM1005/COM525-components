@@ -6,6 +6,7 @@ import Toggle from "./Components/Toggle";
 import Accordion from "./Components/Accordion/index";
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import LogIn from "./Components/LogIn";
 
 
 
@@ -35,11 +36,19 @@ const Home = () => (
       </li>
 
       <li>
-        <Link to="/toggle"> Toggle</Link>
+        <Link to="/LogIn"> Log In</Link>
       </li>
 
       <li>
         <Link to="/Accordion"> Accordion</Link>
+      </li>
+
+      <li>
+        <Link to="/Loader"> Loader</Link>
+      </li>
+
+      <li>
+        <Link to="/toggle"> Toggle</Link>
       </li>
 
 
@@ -54,11 +63,17 @@ function App() {
         <Route path="/review">
           <Review />
         </Route>
-        <Route path="/toggle">
-          <Toggle />
+        <Route path="/LogIn">
+          <LogIn />
         </Route>
         <Route path="/Accordion">
           <Accordion />
+        </Route>
+        <Route path="/loader">
+          <Toggle />
+        </Route>
+        <Route path="/toggle">
+          <Toggle />
         </Route>
         <Route path="/">
           <Home />
