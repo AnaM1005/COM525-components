@@ -67,8 +67,11 @@ const Dropdown = styled.div`
   justify-content: center;
   align-items: center;
   p {
-    max-width: 100%;
+    max-width: 98%;
     font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 50px;
+
   }
 `;
 

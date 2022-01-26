@@ -14,6 +14,7 @@ const schema = yup.object().shape({
 });
 
 const StyledWrapper = styled.div`
+  font-family: 'Montserrat';
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +45,7 @@ const StyledInput = styled.input`
   border-radius: 10px;
   padding-left: 10px;
   font-size: 18px;
-  font-family: Lato;
+  font-family: 'Montserrat';
   color: #270d41;
   margin-left: 3vw;
   margin-bottom: 5px;
@@ -74,6 +75,8 @@ const StyledButton = styled.button`
   color: #ffff;
   text-align: center;
   font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: 600;
   border: 1px solid #d6d525;
   border-radius: 10px;
   cursor: pointer;

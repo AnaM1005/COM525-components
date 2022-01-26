@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import './App.css';
 import Review from "./Components/Review/index";
-import Toggle from "./Components/Toggle";
+import Slider from "./Components/Slider/index";
 import Accordion from "./Components/Accordion/index";
+import LogIn from "./Components/LogIn";
+import Loader from "./Components/Loader/index";
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import LogIn from "./Components/LogIn";
+
 
 
 
@@ -44,11 +46,11 @@ const Home = () => (
       </li>
 
       <li>
-        <Link to="/Loader"> Loader</Link>
+        <Link to="/Slider"> Slider</Link>
       </li>
 
       <li>
-        <Link to="/toggle"> Toggle</Link>
+        <Link to="/Loader"> Loader</Link>
       </li>
 
 
@@ -69,11 +71,11 @@ function App() {
         <Route path="/Accordion">
           <Accordion />
         </Route>
-        <Route path="/loader">
-          <Toggle />
+        <Route path="/Slider">
+          <Slider />
         </Route>
-        <Route path="/toggle">
-          <Toggle />
+        <Route path="/Loader">
+          <Loader />
         </Route>
         <Route path="/">
           <Home />
