@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/COM525-components/static/css/main.ee28c6f6.css",
-    "main.js": "/COM525-components/static/js/main.843e8295.js",
+    "main.css": "/COM525-components/static/css/main.870f2a89.css",
+    "main.js": "/COM525-components/static/js/main.c0f0c155.js",
     "static/js/787.23f6c63e.chunk.js": "/COM525-components/static/js/787.23f6c63e.chunk.js",
     "static/media/hide.svg": "/COM525-components/static/media/hide.6abac260ffbb118aaab0ded41591fce5.svg",
     "index.html": "/COM525-components/index.html",
     "static/media/show.svg": "/COM525-components/static/media/show.2fe2bf735ec19f5f179ca2722b2acf7c.svg",
-    "main.ee28c6f6.css.map": "/COM525-components/static/css/main.ee28c6f6.css.map",
-    "main.843e8295.js.map": "/COM525-components/static/js/main.843e8295.js.map",
+    "static/media/left.svg": "/COM525-components/static/media/left.24bc4a73a809d18b862566d48c86f8cf.svg",
+    "static/media/right.svg": "/COM525-components/static/media/right.c2fb459cd6a93a11bacb4f905357187c.svg",
+    "main.870f2a89.css.map": "/COM525-components/static/css/main.870f2a89.css.map",
+    "main.c0f0c155.js.map": "/COM525-components/static/js/main.c0f0c155.js.map",
     "787.23f6c63e.chunk.js.map": "/COM525-components/static/js/787.23f6c63e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee28c6f6.css",
-    "static/js/main.843e8295.js"
+    "static/css/main.870f2a89.css",
+    "static/js/main.c0f0c155.js"
   ]
 }
