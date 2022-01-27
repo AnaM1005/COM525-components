@@ -17,16 +17,25 @@ const StyledNav = styled.ul`
   justify-content: center;
   height: 200px;
   padding: 90px;
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.7);
+  box-shadow: 0px 4px 20px 5px rgba(196, 196, 196, 0.6);
+  background-color: #fff;
   width: 100px;
   li {
     list-style: none;
     margin-right: 2%;
+    margin-top: 18px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
   }
+  border-radius: 10px;
 `;
 
 const StyledHeader = styled.h1`
   text-align: center;
+  margin-top: 100px;
+  margin-left: 30vw;
 `;
 
 const Home = () => (
