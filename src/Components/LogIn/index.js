@@ -11,7 +11,7 @@ import * as yup from "yup";
 const schema = yup.object().shape({
   email: yup.string().required("Please enter E-mail").email("Invalid E-mail"),
   password: yup.string().required("Please enter password"),
-});
+})
 
 const StyledWrapper = styled.div`
   font-family: 'Montserrat';
@@ -87,21 +87,21 @@ const StyledButton = styled.button`
     border: 1px solid #d6d525;
     color: #d6d525;
   }
-`;
+`
 
 const StyledForgotten = styled.div`
   font-size: 14px;
-  color; #270D41;
-  margin-left: 7vw;
+  color: #270D41;
+  margin-left: 4vw;
   margin-top: 3vh;
 `;
 
 const StyledCreate = styled.div`
   font-size: 14px;
   color; #270D41;
-  margin-left: 8vw;
+  margin-left: 6vw;
   margin-top: 3vh;
-`;
+`
 
 const LogIn = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -114,19 +114,19 @@ const LogIn = () => {
     watch,
   } = useForm({
     resolver: yupResolver(schema),
-  });
+  })
   const onSubmit = (data) => {
     setSubmitted(true);
     console.log(data);
-  };
+  }
 
   const handleClick = (e) => {
     setShowPassword(!showPassword);
-  };
+  }
 
   return (
     <StyledWrapper>
-      {submitted && <h1> You're all done</h1>}
+      {submitted && <h1> Welcome</h1>}
       {!submitted && (
         <StyledBox>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -166,7 +166,7 @@ const LogIn = () => {
         </StyledBox>
       )}
     </StyledWrapper>
-  );
-};
+  )
+}
 
 export default LogIn;

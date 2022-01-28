@@ -20,6 +20,8 @@ const StyledWrapper = styled.div`
 
 const StyledGif = styled.div`
   display: flex;
+  weight: 200px;
+  height: 200px;
   justify-content: center;
   margin-top: -30vh;
 `;
@@ -27,10 +29,11 @@ const StyledGif = styled.div`
 const StyledText = styled.p`
   display: flex;
   text-align: center;
-  justify-content: center;
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: bold;
   color: #3c6e71;
-  margin-top: -20vh;
+  margin-top: -30vh;
+  padding-top: 200px;
 `;
 
 const StyledButton = styled.button`
@@ -42,6 +45,8 @@ const StyledButton = styled.button`
   color: #ffff;
   text-align: center;
   font-size: 20px;
+  font-weight: 600;
+  font-family: 'Montserrat';
   border: 2px solid #3c6e71;
   border-radius: 10px;
   cursor: pointer;
@@ -65,7 +70,7 @@ const Loader = () => {
     <StyledOuterWrapper>
       {showMainPage && !showGifPage && (
         <form>
-          <StyledButton onClick={handleFormClick}> Get Quotes </StyledButton>
+          <StyledButton onClick={handleFormClick}> GET QUOTES </StyledButton>
         </form>
       )}
       <StyledWrapper>
@@ -75,7 +80,7 @@ const Loader = () => {
               <img src={Data} />
             </StyledGif>
             <StyledText>
-              <p>Getting your quotes...</p>
+              <p>Loading your quotes...</p>
             </StyledText>
           </form>
         )}

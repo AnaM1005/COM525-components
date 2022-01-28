@@ -7,7 +7,7 @@ import Accordion from "./Components/Accordion/index";
 import LogIn from "./Components/LogIn";
 import Loader from "./Components/Loader/index";
 
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
 
 
 
@@ -40,10 +40,10 @@ const StyledHeader = styled.h1`
 
 const Home = () => (
   <nav>
-    <StyledHeader> Welcome to Interaction Design components!</StyledHeader>
+    <StyledHeader> Welcome to Interaction Design components library!</StyledHeader>
     <StyledNav>
       <li>
-        <Link to="/review"> Review</Link>
+        <Link to="/review"> Rating</Link>
       </li>
 
       <li>
@@ -91,7 +91,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  );
-}
+  )
+};
 
 export default App;
